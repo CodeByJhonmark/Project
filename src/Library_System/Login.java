@@ -228,19 +228,19 @@ public class Login extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void PasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PasswordActionPerformed
-        // TODO add your handling code here:
+        
     }//GEN-LAST:event_PasswordActionPerformed
 
     private void Forgot_PasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Forgot_PasswordActionPerformed
-        // TODO add your handling code here:
+        
     }//GEN-LAST:event_Forgot_PasswordActionPerformed
 
     private void LoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LoginActionPerformed
-        // TODO add your handling code here:
+        
     }//GEN-LAST:event_LoginActionPerformed
 
     private void googleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_googleActionPerformed
-        // TODO add your handling code here:
+        
         
     }//GEN-LAST:event_googleActionPerformed
 
@@ -257,7 +257,7 @@ public class Login extends javax.swing.JFrame {
     }//GEN-LAST:event_Forgot_PasswordMouseEntered
 
     private void facebookActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_facebookActionPerformed
-        // TODO add your handling code here:
+        
     }//GEN-LAST:event_facebookActionPerformed
 
     
