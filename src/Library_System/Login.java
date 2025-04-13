@@ -24,7 +24,7 @@ public class Login extends javax.swing.JFrame {
         Password_Label = new javax.swing.JLabel();
         Password = new javax.swing.JPasswordField();
         Forgot_Password = new javax.swing.JButton();
-        Login = new javax.swing.JButton();
+        loginButton = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         google = new javax.swing.JButton();
         facebook = new javax.swing.JButton();
@@ -97,17 +97,18 @@ public class Login extends javax.swing.JFrame {
             }
         });
 
-        Login.setBackground(new java.awt.Color(255, 0, 0));
-        Login.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
-        Login.setForeground(new java.awt.Color(255, 255, 255));
-        Login.setText("Login");
-        Login.setToolTipText("");
-        Login.setBorder(javax.swing.BorderFactory.createLineBorder(java.awt.Color.white));
-        Login.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        Login.setDoubleBuffered(true);
-        Login.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        Login.setPreferredSize(new java.awt.Dimension(120, 35));
-        Login.addMouseListener(new java.awt.event.MouseAdapter() {
+        loginButton.setBackground(new java.awt.Color(255, 0, 0));
+        loginButton.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
+        loginButton.setForeground(new java.awt.Color(255, 255, 255));
+        loginButton.setText("Login");
+        loginButton.setToolTipText("");
+        loginButton.setBorder(javax.swing.BorderFactory.createLineBorder(java.awt.Color.white));
+        loginButton.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        loginButton.setDoubleBuffered(true);
+        loginButton.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        loginButton.setPreferredSize(new java.awt.Dimension(120, 35));
+        loginButton.addMouseListener(new java.awt.event.MouseAdapter() {
+
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 LoginMouseEntered(evt);
             }
@@ -115,7 +116,7 @@ public class Login extends javax.swing.JFrame {
                 LoginMouseExited(evt);
             }
         });
-        Login.addActionListener(new java.awt.event.ActionListener() {
+        loginButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 LoginActionPerformed(evt);
             }
@@ -168,7 +169,7 @@ public class Login extends javax.swing.JFrame {
                         .addGroup(RightLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(RightLayout.createSequentialGroup()
                                 .addGap(22, 22, 22)
-                                .addComponent(Login, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(loginButton, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(jLabel1)
                             .addGroup(RightLayout.createSequentialGroup()
                                 .addGap(11, 11, 11)
@@ -196,7 +197,7 @@ public class Login extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(Forgot_Password, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(Login, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(loginButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(13, 13, 13)
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -245,11 +246,11 @@ public class Login extends javax.swing.JFrame {
     }//GEN-LAST:event_googleActionPerformed
 
     private void LoginMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LoginMouseEntered
-        Login.setBackground(Color.orange);
+        loginButton.setBackground(Color.orange);
     }//GEN-LAST:event_LoginMouseEntered
 
     private void LoginMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LoginMouseExited
-        Login.setBackground(Color.red);
+        loginButton.setBackground(Color.red);
     }//GEN-LAST:event_LoginMouseExited
 
     private void Forgot_PasswordMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Forgot_PasswordMouseEntered
@@ -265,7 +266,7 @@ public class Login extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Forgot_Password;
     private javax.swing.JPanel Left;
-    private javax.swing.JButton Login;
+    private javax.swing.JButton loginButton;
     private javax.swing.JLabel LoginLogo;
     private javax.swing.JPanel Main;
     private javax.swing.JPasswordField Password;
